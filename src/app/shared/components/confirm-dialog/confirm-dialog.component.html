@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-between">
+    <h2 mat-dialog-title style="color:red">Delete</h2>
+<button class="close-btn" mat-dialog-close>
+    ✕
+  </button>
+</div>
+
+<mat-dialog-content>
+  Do you want to delete task <b>{{data.name}}</b> ?
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="no()">No</button>
+  <button mat-raised-button color="warn" (click)="yes()">Yes</button>
+</mat-dialog-actions>

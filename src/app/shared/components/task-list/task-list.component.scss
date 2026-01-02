@@ -1,0 +1,216 @@
+.task-card {
+  margin: 16px;
+  width: 100%;
+  background-color: floralwhite;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+.checkBox{
+padding-bottom: 0 !important;
+}
+.assignedTocheckBox{
+    padding: 0 !important;
+}
+  mat-card-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+
+  .btnClass{
+    display: flex;
+    gap: 6px;
+  }
+
+  .header-buttons {
+    display: flex;
+    gap: 6px;
+  }
+
+  .search-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th, td {
+    padding: 8px 12px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .mat-column-select {
+    width: 40px;
+    padding-left: 12px;
+  }
+
+  .comment-text {
+    word-break: break-word;
+  }
+    }
+
+    .comment-text {
+      display: block;
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    .status-completed {
+      color: green;
+      font-weight: 500;
+    }
+
+    .status-pending {
+      color: orange;
+      font-weight: 500;
+    }
+
+    .status-inprogress {
+      color: blue;
+      font-weight: 500;
+    }
+
+    .priority-high {
+      color: red;
+      font-weight: 500;
+    }
+
+    .priority-medium {
+      color: orange;
+      font-weight: 500;
+    }
+
+    .priority-low {
+      color: green;
+      font-weight: 500;
+    }
+  }
+
+  .taskCount {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .noData {
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+    padding: 20px 0;
+  }
+}
+
+/* Responsive media queries */
+@media (max-width: 1024px) {
+  .task-card {
+    .table-container table {
+      min-width: 600px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .task-card {
+    .btnClass{
+    margin-left: 0;
+  }
+    mat-card-header {
+      .header-buttons {
+        margin-top: 8px;
+      }
+    }
+
+    .table-container table {
+      min-width: 500px;
+    }
+
+    .table-container table {
+    th, td {
+      padding: 10px 14px; 
+      font-size: 14px;    
+    }
+
+    .mat-column-select {
+      width: 35px;
+      padding-left: 12px;
+    }
+  }
+  }
+}
+
+@media (max-width: 480px) {
+  .task-card {
+    .btnClass{
+    margin-left: 0;
+  }
+    mat-card-header {
+      mat-card-title {
+        font-size: 16px;
+      }
+
+      .header-buttons {
+        flex-direction: column;
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    .table-container table {
+      min-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+    .btnClass{
+    margin-left: 0;
+  }
+  .table-container table {
+    th, td {
+      padding: 12px 16px;
+      font-size: 13px;
+    }
+
+    .mat-column-select {
+      width: 30px;
+      padding-left: 12px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+    .btnClass{
+    margin-left: 0;
+  }
+  .table-container table {
+    th, td {
+      padding: 14px 16px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+    .btnClass{
+    margin-left: 0;
+  }
+  .table-container table {
+    th, td {
+      padding: 16px 18px;
+      font-size: 11px;
+    }
+
+    .comment-text {
+      font-size: 10px;
+    }
+  }
+}
